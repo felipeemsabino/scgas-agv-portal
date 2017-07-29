@@ -1,0 +1,73 @@
+<nav class="navbar navbar-inverse" style="color: #FFFFCC;margin-bottom:0px !important;border-radius:0px !important;">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">SCGAS - SGV</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <!--ul class="nav navbar-nav" style="font-color:#FFFFCC">
+		<li class="active"><a href="#">Home</a></li>
+		<li class=""><a href="javascript:;" [routerLink]="['area-municipe-home']">Área munícipe</a></li>
+		<li class=""><a href="javascript:;" data-toggle="modal" data-target="#myModal">FAQ</a></li>
+	  </ul-->
+	  <ul class="nav navbar-nav navbar-right">
+	  </ul>
+	</div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="page-header scgas-header">
+    <div class="row">
+      <div class="col-md-3 header-item">
+        <!--img src="./assets/imgs/img_header.gif" -->
+      </div>
+      <div class="col-md-6 header-item">
+        <h1 align="center">SCGAS - Sistema Administrativo</h1>
+        <p align="center">Sistema de controle para SCGAS AGV</p>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 middle-panel">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Login</div>
+        <div class="panel-body">
+
+        <!-- Login Form -->
+        <form role="form">
+
+        <!-- Username Field -->
+            <div class="row">
+                <div class="form-group col-md-12">
+                  <input [(ngModel)]="registerCredentials.user" class="form-control" id="username" type="text" name="username" placeholder="Usuário" required/>
+                </div>
+            </div>
+
+            <!-- Content Field -->
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <input [(ngModel)]="registerCredentials.pass" class="form-control" id="password"  type="password" name="password" placeholder="Senha" required/>
+                </div>
+            </div>
+
+            <!-- Login Button -->
+            <div class="row" style="text-align:center;">
+                <div class="form-group col-md-12">
+                    <button class="btn btn-primary" type="submit" (click)="entrar()">Entrar</button>
+                </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
